@@ -1,5 +1,5 @@
   import {React,useState,useEffect} from 'react'
-  import { BrowserRouter,Routes,Route } from 'react-router-dom'
+  import { BrowserRouter,Routes,Route,useNavigate } from 'react-router-dom'
   import Firstpageslide1 from './components/Firstpageslide1'
   import Firstpageslide2 from './components/Firstpageslide2'
   import Footer from './components/Footer'
@@ -17,13 +17,14 @@
 <Navbar />
    
     <div className='mb-36'></div>
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <Routes>
       <Route path='/Firstpage' element={<Firstpageslide1/>} />   
       <Route path='/Firstpage' element={<Firstpageslide2/>} />   
 
           
-          </Routes></BrowserRouter>
+          </Routes></BrowserRouter> */}
+          
           <Firstpageslide1/>
           <br/>
           <Firstpageslide2/>

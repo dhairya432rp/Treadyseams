@@ -186,15 +186,33 @@
   //   );
   // }
 
-import React from 'react'
-import Home from './Home'
-const App = () => {
-  return (
-    <>
-    <Home/>
-    </>
+// import React from 'react'
+// import Home from './Home'
+// const App = () => {
+//   return (
+//     <>
+//     <Home/>
+//     </>
  
-  )
+//   )
+// }
+
+// export default App
+
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import NewArrival from "./components/NewArrival";
+import ProductDetails from "./components/ProductDetails";
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/NewArrival" element={<NewArrival />} />
+            <Route path="/product/:id" element={<ProductDetails />} />
+
+    </Routes>
+  );
 }
 
-export default App
+export default App;
