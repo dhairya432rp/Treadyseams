@@ -8,12 +8,12 @@ export default function MegaMenuNavbar() {
       {/* Top Row */}
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="font-bold text-2xl tracking-tight">
+       <img  className="h-18 w-20" src="./pics/logo.jpg" /> {/* <a href="#" className="font-bold text-2xl tracking-tight">
           eShakti<span className="text-sm align-top">®</span>
           <p className="text-[10px] text-gray-500 -mt-1">
             We design. You customize.
           </p>
-        </a>
+        </a>> */}
 
         {/* Search */}
         <div className="flex-1 mx-10">
